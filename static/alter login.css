@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('../static/images/peakpx.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #308EBA;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80vh;
+    outline: 3px solid white;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.user-type {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.user-type-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-type-btn.active {
+    background: #0056b3;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    font-weight: bold; /* Make text bold */
+    color: #ffffff; /* Make text white */
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+.options a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+}
+
+.login-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}

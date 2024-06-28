@@ -1,0 +1,312 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #eeeeee;
+    background-image: url("../static/images/peakpx.jpg");
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    background-position: center; /* Centers the background image */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background */
+}
+
+.header-background {
+    display: none; /* Hide the background image if you don't need it */
+}
+
+.header-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    max-width: 100%; /* Adjust as needed */
+    height: 100px;
+    margin-left: 770px;
+
+}
+
+.header-content {
+    margin-top: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Adds a semi-transparent background */
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Patient Info Container */
+.patient-info-container {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value to control transparency */
+    padding: 20px; /* Optional: Add some padding for better layout */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    width: 640px;
+    margin: 40px auto 0 auto; /* Moves the container down by 10 pixels */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patient-info {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Group Styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gender {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* File Upload Styles */
+.file-upload {
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #1FB264;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #15824B;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.file-upload-btn:hover {
+    background: #1AA059;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    margin-top: 20px;
+    border: 4px dashed #1FB264;
+    position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #1FB264;
+    border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #15824B;
+    padding: 60px 0;
+}
+
+.file-upload-image {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value to control transparency */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+/* Add these styles to welcome.css */
+.history-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 50%; /* Adjust this value as needed */
+    overflow-y: auto; /* Add scroll if content exceeds the height */
+}
+
+.history-container h2 {
+    text-align: center;
+}
+
+.history-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-container li {
+    margin-bottom: 10px;
+}
+
+.history-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.history-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.history-container button {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.history-container button:hover {
+    background-color: #0056b3;
+}
